@@ -35,5 +35,5 @@ jobs:
         pip install tabulate
         pip install pandas
     - name: Run app
-      run: mpiexec --oversubscribe -n 4 python ../dev/mpi_app.py
+      run: mpiexec --oversubscribe -n 4 python /dev/mpi_app.py
       
