@@ -1,6 +1,6 @@
 from unittest import TestCase, main
 import os
-from internal.methods import u_init, u_left
+#from internal.methods import u_init, u_left
 
 
 class ConditionTest(TestCase):
