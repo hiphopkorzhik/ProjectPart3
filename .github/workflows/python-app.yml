@@ -37,3 +37,17 @@ jobs:
     - name: Run app
       run: mpiexec --oversubscribe -n 4 python ./dev/mpi_app.py
       
+  test:
+  
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up Python 3.10
+      uses: actions/setup-python@v3
+      with:
+        python-version: "3.10"
+    - name: Run tests
+      run : python ./qa/mpi_test.py
+    
+      
