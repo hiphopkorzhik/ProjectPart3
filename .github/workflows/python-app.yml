@@ -38,6 +38,6 @@ jobs:
       run: mpiexec --oversubscribe -n 4 python ./dev/mpi_app.py
     
     - name: Run tests
-      run : python ./qa/mpi_test.py
+      run : python ./test/mpi_test.py
     
       
